@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#081222">
+  <meta name="description" content="MASTRA Celestial — 77개의 행성, 441개의 수학 별을 탐험하는 무료 수학 학습 데모">
+  <meta name="robots" content="noindex, nofollow">
+  <title>MASTRA Celestial — 수학의 우주</title>
+  <style>
+    :root{color-scheme:dark;--bg:#081222;--panel:#122138;--edge:#445470;--gold:#ecd09d;--muted:#a5b8ce;--white:#f5f4ec}
+    *{box-sizing:border-box}body{margin:0;min-height:100svh;font-family:system-ui,-apple-system,"Noto Sans KR","Malgun Gothic",sans-serif;color:var(--white);background:radial-gradient(ellipse at 60% 6%,#304b7199,transparent 47%),radial-gradient(ellipse at 12% 88%,#31435455,transparent 50%),#081222;overflow-x:hidden}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(circle,#e4d9bcaf .7px,transparent 1.2px),radial-gradient(circle,#a9cced8c .8px,transparent 1.4px);background-size:57px 63px,97px 121px;background-position:8px 13px,46px 63px;opacity:.27}
+    .shell{width:min(100%,560px);margin:0 auto;position:relative;padding:58px 21px 60px;min-height:100svh;display:flex;flex-direction:column}
+    .topline{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--gold);font-size:11px;letter-spacing:.19em;font-weight:650}
+    .mark{width:72px;height:72px;margin:42px auto 27px;display:grid;place-items:center;border:1px solid #bda57d77;border-radius:50%;background:radial-gradient(circle at 25% 20%,#bdcfe694,#6e9bb44d 45%,#152a49 75%);box-shadow:0 0 38px #c9b18b30,inset -10px -10px 20px #020b1c}
+    .mark svg{width:41px;height:41px;fill:none;stroke:#fff0d0;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 6px #e9b978)}
+    h1{font-size:clamp(32px,8vw,43px);margin:0;text-align:center;letter-spacing:-.04em;font-weight:700}h1 span{color:var(--gold)}
+    .lead{margin:13px auto 9px;max-width:390px;text-align:center;line-height:1.75;font-size:14px;color:#ccdae8;word-break:keep-all}
+    .count{text-align:center;color:#b7a98d;font-size:12px;letter-spacing:.03em;margin-bottom:32px}
+    .choose{display:grid;gap:13px}.choice{display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;border:1px solid #536481aa;border-radius:17px;background:linear-gradient(110deg,#1a2d46e8,#111e31ee);padding:20px 17px;box-shadow:0 10px 32px #0004;min-height:116px;transition:transform .14s,border-color .14s,background .14s}
+    .choice:hover,.choice:focus-visible{border-color:#e4c08c;transform:translateY(-2px);outline:none;background:linear-gradient(110deg,#263d56,#13243a)}
+    .icon{width:48px;height:48px;flex:0 0 48px;border-radius:14px;border:1px solid #bc9f6a99;display:grid;place-items:center;color:var(--gold);background:#34405a67}.icon svg{width:25px;height:25px;stroke:currentColor;stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .text{min-width:0;flex:1;display:grid;gap:6px}.text strong{font-size:17px;letter-spacing:-.025em}.text small{font-size:12px;line-height:1.55;color:#a9c0d1;word-break:keep-all}.arrow{flex:none;width:19px;height:19px;stroke:#e8ce9b;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    .note{margin-top:29px;border-top:1px solid #40516a55;padding:22px 7px 0;font-size:11px;line-height:1.85;color:#9aabc0;word-break:keep-all}.note strong{color:#e3c99d;font-weight:650}
+    footer{margin-top:auto;text-align:center;padding-top:36px;font-size:10px;letter-spacing:.08em;color:#7289a4}
+    @media(max-width:400px){.shell{padding:39px 17px 44px}.mark{margin:29px auto 23px}.choice{padding:16px 13px;min-height:108px}.icon{width:44px;height:44px;flex-basis:44px}.text strong{font-size:16px}}
+    @media(prefers-reduced-motion:reduce){.choice{transition:none}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <div class="topline"><span aria-hidden="true">✦</span> MATHEMATICAL UNIVERSE <span aria-hidden="true">✦</span></div>
+  <div class="mark" aria-hidden="true"><svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="11"/><ellipse cx="24" cy="24" rx="21" ry="8" transform="rotate(-25 24 24)"/><path d="M25 3v4M8 39l3-3M37 7l3-3"/></svg></div>
+  <h1>MASTRA <span>Celestial</span></h1>
+  <p class="lead">수학의 개념을 별처럼 발견하고, 행성과 행성 사이의 연결을 탐험해 보세요.</p>
+  <p class="count">8개 분야 · 77개 행성 · 441개 수학 개념</p>
+  <nav class="choose" aria-label="탐험 모드 선택">
+    <a class="choice" href="./explore.html">
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m10 10 7-3-3 7-7 3z"/></svg></span>
+      <span class="text"><strong>자유 탐험</strong><small>개방된 분야의 행성을 원하는 순서로 탐험해요.</small></span>
+      <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>
+    </a>
+    <a class="choice" href="./sequential.html">
+      <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M6 5h12M6 12h12M6 19h12"/><circle cx="6" cy="5" r="2" fill="#e6cb97" stroke="none"/><circle cx="6" cy="12" r="2" fill="#e6cb97" stroke="none"/><circle cx="6" cy="19" r="2" fill="#e6cb97" stroke="none"/></svg></span>
+      <span class="text"><strong>순차 탐험</strong><small>각 분야의 행성을 순서대로 완료하며 진행해요.</small></span>
+      <svg class="arrow" aria-hidden="true" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></svg>
+    </a>
+  </nav>
+  <aside class="note"><strong>친구 체험판 · v58</strong> · 모든 분야의 광고 해제는 현재 실제 광고가 아닌 테스트 기능이에요. 학습 기록과 수정 메모는 <strong>현재 사용하는 브라우저·기기</strong>에 저장되며 다른 기기 또는 설치된 APK와 자동 동기화되지 않아요. 메모는 설정에서 내보내 보관할 수 있어요.</aside>
+  <footer>MASTRA CELESTIAL · FREE MATH LEARNING DEMO</footer>
+</main>
+</body>
+</html>
